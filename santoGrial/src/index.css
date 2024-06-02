@@ -1,0 +1,110 @@
+header{
+  margin: 0px;
+}
+body{
+  margin: 0px;
+  --main-color: #be8c6b;
+  --second-color: #c2a88f;
+  --third-color: #ece4d9;
+}
+
+.asfasdfasd{
+  color: rebeccapurple;
+}
+
+/* Navbar */
+.links{
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.links a{
+  text-decoration: none;
+  margin: 0px;
+  color: var(--main-color);
+  padding: 20px 100px 20px 100px;
+}
+
+/* Aside */
+.filter{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 400px;
+  flex: 0 0 auto;
+  border-right: 1px solid var(--second-color);
+}
+
+.filter button{
+  padding: 40px 20px 40px 20px;
+  margin: 0px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid var(--second-color);
+  color: var(--main-color);
+  background-color: white;
+  cursor:pointer;
+}
+
+.filter button:hover{
+  background-color: var(--second-color);
+}
+
+.filter:first-child{
+  border-top: 1px solid var(--second-color);
+}
+
+
+
+/* Main */
+.mainBody{
+  display: flex;
+  flex-direction: row;
+}
+
+main{
+  background-color: var(--third-color);
+  flex: 1;
+}
+
+.allProducts{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.allProducts:last-child{
+  margin-bottom: 20px;
+}
+
+/* Product */
+.product img{
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  margin: 40px 0 0 40px;
+  background-color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.product img:hover{
+  background-color: #e2e2e2;
+}
+
+.product p{
+  margin: 5px 0 0 50px;
+}
+.product span{
+  font-weight: bold;
+}
+
+
+/* Footer */
+.footer{
+  text-align: center;
+  background-color: var(--main-color);
+  padding: 8px;
+}
